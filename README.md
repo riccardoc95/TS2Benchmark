@@ -31,9 +31,33 @@ conda create -n ts2b python=3.11
 conda activate ts2b
 ```
 
-## 3 Installazione dei pacchetti
+## 3 Installazione dei pacchetti python
+### 3.1 Utilizzare il comando python pip
 ```bash
-pip install -r requiremets.txt
+pip install ripser
+```
+
+### 3.2 Compilare il codice da una repository
+```bash
+git clone https://github.com/riccardoc95/PixHomology
+cd PixHomology
+```
+
+```bash
+module load gcc
+```
+
+```bash
+module load cmake
+```
+
+```bash
+pip install .
+```
+
+### 3.3 Installazione ricorsiva da file
+```bash
+pip install -r requirements.txt 
 ```
 
 ## 4. Download data
