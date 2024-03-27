@@ -88,6 +88,11 @@ The commands to install from source may vary depending on the package, but typic
 pip install .
 ```
 
+After install, we return to our working directory with:
+```bash
+cd ..
+```
+
 ## 4. Download data
 In questo step andremo a scaricare i dati necessari per il benchmark dei software
 ```bash
