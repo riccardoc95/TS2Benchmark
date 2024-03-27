@@ -93,13 +93,30 @@ After install, we return to our working directory with:
 cd ..
 ```
 
-## 4. Download data
-In questo step andremo a scaricare i dati necessari per il benchmark dei software
+## 4. Download of datasets
+To download datasets refers to acquiring data files from a remote location, typically over the internet, for use in analysis, research, or other purposes. This process involves retrieving the data files from a source and saving them to a local storage location. Depending on the source and the data format, various methods can be employed for downloading datasets.
+
 ```bash
 wget link_data
 ```
 
-## 5. Esecuzione del job su una shell interattiva
+## 5. Executing the job within an interactive shell 
+Executing a task within an interactive shell is accomplished using the `srun` command, which is typically employed in high-performance computing environments for job submission and management. Below is an example of how to run a job interactively using `srun`:
+
 ```bash
-srun
+srun -N 1 -n 1 -p dss -t 00:30:00 --pty /bin/bash
 ```
+
+where:
+- `srun`: Initiates the submission of a job to the scheduler.
+- `-N 1`: Specifies that the job should be allocated resources on 1 compute node.
+- `-n 1`: Requests 1 CPU cores for the job.
+- `-p dss`: Assigns the job to the dss partition in the cluster, which typically schedules jobs that can fit into gaps in the regular scheduling queue.
+- `-t 00:30:00`: Sets a time limit of 30 minutes for the job to execute.
+- `--pty`: Requests a pseudo-terminal for the job, enabling interactive access.
+- `/bin/bash`: Specifies the shell (in this case, Bash) to be used for the interactive session once the job starts running.
+
+Upon running this command, users gain access to an interactive shell session where they can execute commands, run programs, and perform other tasks within the allocated computing environment. This interactive session persists until the user exits the shell or the allocated resources reach their specified limits.
+
+
+**ATTENZIONE (CHIEDERE A UMBERTO)**: problema della chiusura del terminale, risolto? da dire? da non far faare?!
