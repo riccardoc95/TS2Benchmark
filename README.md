@@ -97,7 +97,7 @@ cd ..
 To download datasets refers to acquiring data files from a remote location, typically over the internet, for use in analysis, research, or other purposes. This process involves retrieving the data files from a source and saving them to a local storage location. Depending on the source and the data format, various methods can be employed for downloading datasets.
 
 ```bash
-wget link_data
+python dataset.py
 ```
 
 ## 5. Executing the job within an interactive shell 
@@ -117,6 +117,11 @@ where:
 - `/bin/bash`: Specifies the shell (in this case, Bash) to be used for the interactive session once the job starts running.
 
 Upon running this command, users gain access to an interactive shell session where they can execute commands, run programs, and perform other tasks within the allocated computing environment. This interactive session persists until the user exits the shell or the allocated resources reach their specified limits.
+
+We run benchmark with:
+```bash
+python test.py --dataset MNIST --method ripser
+```
 
 
 **ATTENZIONE (CHIEDERE A UMBERTO)**: problema della chiusura del terminale, risolto? da dire? da non far faare?!
