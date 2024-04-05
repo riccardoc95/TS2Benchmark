@@ -120,7 +120,7 @@ Upon running this command, users gain access to an interactive shell session whe
 
 We run benchmark with:
 ```bash
-python test.py --dataset MNIST --method ripser
+./benchmark.sh
 ```
 
 
