@@ -13,10 +13,13 @@ train_images, train_labels, valid_images, valid_labels, \
 test_images, test_labels  = numpy_datasets.images.mnist.load(path="data/temp")
 
 for i, train_image in enumerate(train_images):
-    np.save("")
+    np.save(f"data/MNIST/{i + 1}.npy", train_image)
 
 train_images, train_labels, test_images, test_labels \
 = numpy_datasets.images.cifar10.load(path="data/temp")
+
+for i, train_image in enumerate(train_images):
+    np.save(f"data/CIFAR10/{i + 1}.npy", train_image)
 
 
 
