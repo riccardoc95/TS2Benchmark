@@ -24,7 +24,7 @@ if args.method:
         function = lambda x: lower_star_img(x)
     elif args.method == 'pixh':
         import pixhomology as px
-        function = lambda x: - px.computePH(-x)
+        function = lambda x: -1 * px.computePH(-1 * x)
     else:
         function = lambda x: x
 else:
@@ -41,7 +41,7 @@ if __name__ == "__main__":
 
     output = [f'{args.method}', 
              '----------',
-             f'Execution time: ', round(max(time),1), 'sec',
-             f'Peak of memory: ', round(max(mem_usage), 1), 'Mbyte']
+             f'Execution time: ', str(round(max(time),1)), 'sec',
+             f'Peak of memory: ', str(round(max(mem_usage), 1)), 'Mbyte']
     with open(f"benchmark_{args.dataset}_{args.method}.txt", 'w') as f:
         f.writelines(output)
