@@ -1,2 +1,2 @@
-python test_prova.py --dataset MNIST --method pixh
-python test_prova.py --dataset MNIST --method ripser
+python test.py --dataset MNIST --method pixh
+python test.py --dataset MNIST --method ripser
