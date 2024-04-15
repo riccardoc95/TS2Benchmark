@@ -146,6 +146,11 @@ where:
 - `--pty`: Requests a pseudo-terminal for the job, enabling interactive access.
 - `/bin/bash`: Specifies the shell (in this case, Bash) to be used for the interactive session once the job starts running.
 
+
+```bash
+conda activate ts2b
+```
+
 Upon running this command, users gain access to an interactive shell session where they can execute commands, run programs, and perform other tasks within the allocated computing environment. This interactive session persists until the user exits the shell or the allocated resources reach their specified limits.
 
 We run benchmark with:
