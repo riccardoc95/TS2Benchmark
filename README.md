@@ -95,14 +95,30 @@ cd ..
 
 ## 4. Download of datasets
 To download datasets refers to acquiring data files from a remote location, typically over the internet, for use in analysis, research, or other purposes. This process involves retrieving the data files from a source and saving them to a local storage location. Depending on the source and the data format, various methods can be employed for downloading datasets.
+```bash
+cd data
+```
 
 - Download manually:
 ```bash
-wget -c https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz
+wget -c "https://www.dropbox.com/scl/fi/ol2v2u36zoqdm2j4xsyvu/MNIST.zip?rlkey=ea0ckamg4fbiff60njughkf69&dl=0" -O MNIST.zip
+```
+```bash
+wget -c "https://www.dropbox.com/scl/fi/059zdeiisypqek314rdvk/CIFAR10.zip?rlkey=tjrgvejepx6i8ajjhqxghr8k2&dl=0" -O CIFAR10.zip
 ```
 
 ```bash
-tar -xvzf cifar-10-python.tar.gz
+unzip -r MNIST.zip
+```
+```bash
+unzip -r CIFAR10.zip
+```
+
+```bash
+rm MNIST.zip
+```
+```bash
+rm CIFAR10.zip
 ```
 
 - With python script:
