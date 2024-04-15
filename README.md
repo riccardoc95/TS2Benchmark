@@ -121,6 +121,10 @@ rm MNIST.zip
 rm CIFAR10.zip
 ```
 
+```bash
+cd ..
+```
+
 - With python script:
 ```bash
 python dataset.py
@@ -145,6 +149,11 @@ where:
 Upon running this command, users gain access to an interactive shell session where they can execute commands, run programs, and perform other tasks within the allocated computing environment. This interactive session persists until the user exits the shell or the allocated resources reach their specified limits.
 
 We run benchmark with:
+
+```bash
+chmod +x benchmark.sh
+```
+
 ```bash
 ./benchmark.sh
 ```
