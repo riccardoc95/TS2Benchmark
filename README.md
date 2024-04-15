@@ -108,10 +108,10 @@ wget -c "https://www.dropbox.com/scl/fi/059zdeiisypqek314rdvk/CIFAR10.zip?rlkey=
 ```
 
 ```bash
-unzip -r MNIST.zip
+unzip MNIST.zip
 ```
 ```bash
-unzip -r CIFAR10.zip
+unzip CIFAR10.zip
 ```
 
 ```bash
