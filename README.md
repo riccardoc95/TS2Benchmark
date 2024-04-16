@@ -162,6 +162,3 @@ chmod +x benchmark.sh
 ```bash
 ./benchmark.sh
 ```
-
-
-**ATTENZIONE (CHIEDERE A UMBERTO)**: problema della chiusura del terminale, risolto? da dire? da non far faare?!
