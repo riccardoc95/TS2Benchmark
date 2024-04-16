@@ -39,9 +39,9 @@ if __name__ == "__main__":
     mem_usage = memory_usage((benchmark_function, ), interval=.01)
     time = np.arange(0, len(mem_usage)/10, 0.1)
 
-    output = [f'{args.method}', 
-             '----------',
-             f'Execution time: ', str(round(max(time),1)), 'sec',
-             f'Peak of memory: ', str(round(max(mem_usage), 1)), 'Mbyte']
+    output = [f'{args.method}\n', 
+             '----------\n',
+             f'Execution time: ', str(round(max(time),1)), 'sec\n',
+             f'Peak of memory: ', str(round(max(mem_usage), 1)), 'Mbyte\n']
     with open(f"benchmark_{args.dataset}_{args.method}.txt", 'w') as f:
         f.writelines(output)
