@@ -8,7 +8,7 @@ Frequently, we encounter multiple software implementations for tackling the same
 
 ## Solutions
 To determine the most efficient solution in terms of execution time and memory usage, we propose a benchmarking approach on [Terastat2](https://www.dss.uniroma1.it/it/HPCTerastat2) utilizing [interactive jobs](https://engaging-web.mit.edu/eofe-wiki/slurm/srun/) (TS2) for real-time results.
-The script used is `test.py` which calculates the memory and execution time of the software on the dataset specified at startup. Below is the step-by-step guide to create the environment on TS2 and run the script.
+The script used is [`test.py`](https://github.com/riccardoc95/TS2Benchmark/blob/main/test.py) which calculates the memory and execution time of the software on the dataset specified at startup. Below is the step-by-step guide to create the environment on TS2 and run the script.
 
 ### 0. Connect to TS2
 Accessing TS2 involves establishing a connection to the login node through the ssh text terminal. The command from the terminal is:
@@ -147,12 +147,9 @@ conda activate ts2b
 
 Upon running this command, users gain access to an interactive shell session where they can execute commands, run programs, and perform other tasks within the allocated computing environment. This interactive session persists until the user exits the shell or the allocated resources reach their specified limits.
 
-We run benchmark with:
+We run [`benchmark.sh`](https://github.com/riccardoc95/TS2Benchmark/blob/main/benchmark.sh) with:
 
 ```bash
 chmod +x benchmark.sh
-```
-
-```bash
 ./benchmark.sh
 ```
