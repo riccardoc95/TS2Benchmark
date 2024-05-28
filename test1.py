@@ -3,11 +3,11 @@ from memory_profiler import memory_usage
 import tqdm
 import os
 
-dataset = input('the name of the dataset to test')
-method  = input('the name of the method to test')
+dataset = input('the name of the dataset to test: ')
+method  = input('the name of the method to test: ')
 
 if dataset:
-    dataset_dir = f'./data/{args.dataset}'
+    dataset_dir = f'./data/{dataset}'
     files = list(os.listdir(dataset_dir))
 else:
     dataset_dir = './data/MNIST'
